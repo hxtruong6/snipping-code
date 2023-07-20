@@ -44,7 +44,7 @@ if __name__ == "__main__":
             input_file,
             "-vf",
             # "scale=256:256",
-            "scale=256:256:force_original_aspect_ratio=decrease",
+            "scale=256:256:force_original_aspect_ratio=decrease,pad=ceil(iw/2)*2:ceil(ih/2)*2",
             "-preset",
             "slow",
             "-crf",
